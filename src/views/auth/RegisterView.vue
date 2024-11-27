@@ -38,6 +38,15 @@ function onClick() {
 
                 <v-card-text class="bg-surface-light pt-4">
                   <v-form fast-fail @submit.prevent>
+                    <v-row>
+                      <v-col cols="6">
+                        <v-text-field label="First Name" variant="outlined"></v-text-field>
+                      </v-col>
+                      <v-col cols="6">
+                        <v-text-field label="Last Name" variant="outlined"></v-text-field>
+                      </v-col>
+                    </v-row>
+
                     <v-text-field label="E-mail" variant="outlined"></v-text-field>
 
                     <v-text-field
@@ -46,14 +55,13 @@ function onClick() {
                       variant="outlined"
                     ></v-text-field>
 
-                    <v-btn class="mt-2" type="submit" block>Login</v-btn>
+                    <v-btn class="mt-2" type="submit" block>Submit</v-btn>
                   </v-form>
+
                   <v-divider class="my-5">
                     <h5 class="text-center">
-                      Don't have account?
-                      <RouterLink class="text-success" to="/register"
-                        >Click here to Register</RouterLink
-                      >
+                      Already have account?
+                      <RouterLink class="text-success" to="/">Click here to login</RouterLink>
                     </h5>
                   </v-divider>
                 </v-card-text>
